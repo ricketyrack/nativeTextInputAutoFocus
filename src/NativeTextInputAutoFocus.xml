@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="loves.nativetextinputautofocus.NativeTextInputAutoFocus" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Native Text Input Auto Focus</name>
+    <description>React Native TextInput field that grabs focus on page load and hides keyboard</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="valueAttribute" type="attribute" required="false">
+                <caption>Value attribute</caption>
+                <description>The attribute that contains the value</description>
+                <attributeTypes>
+                    <attributeType name="Decimal" />
+                    <attributeType name="Integer" />
+                    <attributeType name="Long" />
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
