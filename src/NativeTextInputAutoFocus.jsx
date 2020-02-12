@@ -1,11 +1,13 @@
 import { Component, createElement } from "react";
 import { Keyboard, TextInput } from "react-native";
 
+var Big = require('big.js');
+
 export class NativeTextInputAutoFocus extends Component {
+
     constructor(props) {
         super(props);
 
-        this.onChangeTextHandler = this.onChangeText.bind(this);
     }
 
     componentDidMount() {
@@ -13,20 +15,31 @@ export class NativeTextInputAutoFocus extends Component {
         setTimeout(() => { Keyboard.dismiss(); }, 100);
     }
 
-    onChangeText = (text) => {
-        if (this.props.valueAttribute) {
-            this.props.valueAttribute.setValue(text);
+    _onChangeText = (theText) => {
+        if (theText.length >= 8) {
+
+            if (this.props.valueAttribute) {
+                this.props.valueAttribute.setValue(new Big(theText));
+            }
+
+            if (this.props.onChangeAction) {
+                this.props.onChangeAction.execute();
+            }
+
         }
     }
-
+    
     render() {
         return (
             <TextInput
                 autoFocus={true}
                 style={this.props.style}
                 key="textinput42"
-                onChangeText={text => this.onChangeText(text)}
-                value={this.props.valueAttribute ? this.props.valueAttribute.displayValue : "Default"}
+                onChangeText={this._onChangeText}
+                // valueAttribute is a Big
+                defaultValue={this.props.valueAttribute != null
+                                && this.props.valueAttribute.value != null 
+                                ? this.props.valueAttribute.value.toString() : "zebra"}
             />
         );
     }

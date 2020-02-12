@@ -8,15 +8,18 @@
     <icon/>
     <properties>
         <propertyGroup caption="General">
-            <property key="valueAttribute" type="attribute" required="false">
+            <property key="valueAttribute" type="attribute" required="false" onChange="onChangeAction">
                 <caption>Value attribute</caption>
                 <description>The attribute that contains the value</description>
                 <attributeTypes>
-                    <attributeType name="Decimal" />
-                    <attributeType name="Integer" />
                     <attributeType name="Long" />
-                    <attributeType name="String"/>
                 </attributeTypes>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <property key="onChangeAction" type="action" required="true">
+                <caption>On change action</caption>
+                <description />
             </property>
         </propertyGroup>
     </properties>
