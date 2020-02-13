@@ -8,5 +8,6 @@ Has minimum length property that keeps it from setting the 'Long' attribute unti
 Set the 'Long' attribute, the optional action and the minimum length.
 
 ## Issues, suggestions and feature requests
+Currently only supports 'Long' entity attributes.
 
 ## Development and contribution
