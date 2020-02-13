@@ -15,10 +15,14 @@
                     <attributeType name="Long" />
                 </attributeTypes>
             </property>
+            <property key="minLength" type="integer" defaultValue="14" required="true">
+                <caption>Minimum Length</caption>
+                <description>Will not update attribute until this length is received</description>
+            </property>
         </propertyGroup>
         <propertyGroup caption="Events">
             <property key="onChangeAction" type="action" required="true">
-                <caption>On change action</caption>
+                <caption>On change</caption>
                 <description />
             </property>
         </propertyGroup>

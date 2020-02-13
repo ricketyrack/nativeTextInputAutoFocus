@@ -16,10 +16,12 @@ export class NativeTextInputAutoFocus extends Component {
     }
 
     _onChangeText = (theText) => {
-        if (theText.length >= 8) {
+        const minLength = this.props.minLength;
+
+        if (theText.length >= minLength) {
 
             if (this.props.valueAttribute) {
-                this.props.valueAttribute.setValue(new Big(theText));
+                this.props.valueAttribute.setValue(Big(theText));
             }
 
             if (this.props.onChangeAction) {
