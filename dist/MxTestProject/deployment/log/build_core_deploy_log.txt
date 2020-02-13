@@ -1,8 +1,0 @@
-Buildfile: C:\Users\Rick.wilson\projects\nativeTextInputAutoFocus\dist\MxTestProject\deployment\build_core.xml
-
-deploy:
-     [copy] Copying 32 files to C:\Users\Rick.wilson\projects\nativeTextInputAutoFocus\dist\MxTestProject\deployment
-
-BUILD SUCCESSFUL
-Total time: 0 seconds
-
