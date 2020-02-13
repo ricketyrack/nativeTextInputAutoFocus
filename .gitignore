@@ -1,6 +1,4 @@
-dist/MxTestProject/
-dist/tmp/
-dist/1.0.0/
+dist/
 node_modules/
 *.log
 .env

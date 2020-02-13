@@ -1,0 +1,2 @@
+import { t } from "mendix/native";
+export const ACT_NF_PersonCreateNew = {"instructions":[{"type":"createObject","label":1,"objectType":"MyFirstModule.Person","outputVar":"NewPerson"},{"type":"openForm","label":2,"path":"MyFirstModule.Person_NewEdit_Native","params":{"name":"MyFirstModule.Person_NewEdit_Native","location":"content"},"inputVar":"NewPerson"},{"type":"return","label":3,"result":{"type":"literal","value":null},"resultKind":"primitive"}],"paramsSpec":{}};

@@ -1,0 +1,2 @@
+import { t } from "mendix/native";
+export const ACT_NF_PersonGetNonDeleted = {"instructions":[{"type":"databaseRetrieve","label":1,"entity":"MyFirstModule.Person","constraints":{"type":"function","name":"!=","parameters":[{"type":"attribute","attribute":"Deleted"},{"type":"function","name":"true","parameters":[]}]},"takeFirst":false,"sort":[["LastName","asc"],["FirstName","asc"]],"outputVar":"PersonList"},{"type":"return","label":2,"result":{"type":"variable","variable":"PersonList"},"resultKind":"list"}],"paramsSpec":{}};
