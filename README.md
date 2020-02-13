@@ -1,5 +1,5 @@
 ## NativeTextInputAutoFocus
-[React Native TextInput field that grabs focus on page load and hides keyboard]
+React Native TextInput field that grabs focus on page load and hides keyboard
 
 ## Features
 Has minimum length property that keeps it from setting the 'Long' attribute until it receives that length.
