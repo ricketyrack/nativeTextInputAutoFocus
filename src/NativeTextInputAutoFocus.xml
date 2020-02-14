@@ -15,6 +15,10 @@
                     <attributeType name="Long" />
                 </attributeTypes>
             </property>
+            <property key="placeholderText" type="string" required="false">
+                <caption>Placeholder Text</caption>
+                <description>Appears in input field until something entered</description>
+            </property>
             <property key="minLength" type="integer" defaultValue="14" required="true">
                 <caption>Minimum Length</caption>
                 <description>Will not update attribute until this length is received</description>

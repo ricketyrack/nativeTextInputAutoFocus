@@ -26,18 +26,22 @@ export class NativeTextInputAutoFocus extends Component {
     };
 
     render() {
+        const placeHolderText =
+            this.props.placeHolderText != null && this.props.placeHolderText.value != null
+                ? this.props.placeHolderText
+                : null;
+        const valueAttribute =
+            this.props.valueAttribute != null && this.props.valueAttribute.value != null
+                ? this.props.valueAttribute.value.toString()
+                : null;
         return (
             <TextInput
                 autoFocus={true}
                 style={this.props.style}
                 key="textinput42"
                 onChangeText={this._onChangeText}
-                // valueAttribute is a Big
-                defaultValue={
-                    this.props.valueAttribute != null && this.props.valueAttribute.value != null
-                        ? this.props.valueAttribute.value.toString()
-                        : "zebra"
-                }
+                defaultValue={valueAttribute != null ? valueAttribute : ""}
+                placeHolder={placeHolderText != null ? placeHolderText : ""}
             />
         );
     }
